@@ -1,0 +1,2051 @@
+{
+  "ReportVersion": "2019.4.1",
+  "ReportGuid": "6b74a0ae93fa7fef0835f611072fd195",
+  "ReportName": "JD23",
+  "ReportAlias": "JD23 团队住店明细报表",
+  "ReportFile": "JD23.mrt",
+  "ReportCreated": "/Date(1536535930000+0800)/",
+  "ReportChanged": "/Date(1536535930000+0800)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "ReportUnit": "Centimeters",
+  "PreviewSettings": 268435455,
+  "Styles": {
+    "0": {
+      "Ident": "StiStyle",
+      "Name": "选择条件同步",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;;",
+      "Border": ";;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:51,51,51",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "1": {
+      "Ident": "StiStyle",
+      "Name": "数据band",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:51,51,51",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "2": {
+      "Ident": "StiStyle",
+      "Name": "数据band-穿透",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;Underline;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:24,143,255",
+      "NegativeTextBrush": "solid:Red"
+    },
+    "3": {
+      "Ident": "StiStyle",
+      "Name": "手机号",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:51,51,51",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "4": {
+      "Ident": "StiStyle",
+      "Description": "金额",
+      "Name": "金额",
+      "HorAlignment": "Right",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:55,55,55",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "5": {
+      "Ident": "StiStyle",
+      "Name": "金额-穿透",
+      "HorAlignment": "Right",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;Underline;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:24,143,255",
+      "NegativeTextBrush": "solid:Red"
+    },
+    "6": {
+      "Ident": "StiStyle",
+      "Description": "表头栏",
+      "Name": "表头栏",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;Bold;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:55,55,55",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "7": {
+      "Ident": "StiStyle",
+      "Description": "统计数量",
+      "Name": "统计数量",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;Bold;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:51,51,51",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "8": {
+      "Ident": "StiStyle",
+      "Name": "总计合计",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;Bold;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:55,55,55",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "9": {
+      "Ident": "StiStyle",
+      "Description": "统计金额",
+      "Name": "统计金额",
+      "HorAlignment": "Right",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;Bold;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:55,55,55",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "10": {
+      "Ident": "StiStyle",
+      "Name": "时间",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": "Arial Unicode MS;9;;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:55,55,55",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "11": {
+      "Ident": "StiStyle",
+      "Name": "页眉左",
+      "VertAlignment": "Bottom",
+      "Font": "Microsoft YaHei;;;",
+      "Border": "Bottom;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:51,51,51",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "12": {
+      "Ident": "StiStyle",
+      "Name": "页眉右",
+      "HorAlignment": "Right",
+      "VertAlignment": "Bottom",
+      "Font": "Microsoft YaHei;;;",
+      "Border": "Bottom;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:55,55,55",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "13": {
+      "Ident": "StiStyle",
+      "Name": "页脚左",
+      "Font": "Microsoft YaHei;;;",
+      "Border": ";;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:188,188,188",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "14": {
+      "Ident": "StiStyle",
+      "Name": "页脚右",
+      "HorAlignment": "Right",
+      "Font": "Microsoft YaHei;;;",
+      "Border": ";;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:188,188,188",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "15": {
+      "Ident": "StiStyle",
+      "Description": "分组表头居左加粗",
+      "Name": "分组表头居左加粗",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;Bold;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:51,51,51",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseHorAlignment": true,
+      "AllowUseVertAlignment": true
+    },
+    "16": {
+      "Ident": "StiStyle",
+      "Description": "序号",
+      "Name": "序号",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;9;;",
+      "Border": "All;;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:51,51,51",
+      "NegativeTextBrush": "solid:Red"
+    },
+    "17": {
+      "Ident": "StiStyle",
+      "Description": "报表名称",
+      "Name": "报表名称",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": "Microsoft YaHei;12;;",
+      "Border": ";;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:0,0,0",
+      "NegativeTextBrush": "solid:Red"
+    }
+  },
+  "Dictionary": {
+    "Variables": {
+      "0": {
+        "Name": "orgName",
+        "DialogInfo": {
+          "DateTimeType": "DateAndTime"
+        },
+        "Alias": "orgName",
+        "Type": "System.String"
+      },
+      "1": {
+        "Name": "currentTime",
+        "DialogInfo": {
+          "DateTimeType": "DateAndTime"
+        },
+        "Alias": "currentTime",
+        "Type": "System.String"
+      },
+      "2": {
+        "Name": "currentUser",
+        "DialogInfo": {
+          "DateTimeType": "DateAndTime"
+        },
+        "Alias": "currentUser",
+        "Type": "System.String"
+      },
+      "3": {
+        "Name": "selectedConditions",
+        "DialogInfo": {
+          "DateTimeType": "DateAndTime"
+        },
+        "Alias": "selectedConditions",
+        "Type": "System.String"
+      },
+      "4": {
+        "Name": "hostName",
+        "DialogInfo": {
+          "DateTimeType": "DateAndTime"
+        },
+        "Alias": "hostName",
+        "Type": "System.String"
+      }
+    },
+    "DataSources": {
+      "0": {
+        "Ident": "StiDataTableSource",
+        "Name": "dataList",
+        "Alias": "dataList",
+        "Columns": {
+          "0": {
+            "Name": "groupName",
+            "Index": -1,
+            "NameInSource": "groupName",
+            "Alias": "groupName",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "roomNumber",
+            "Index": -1,
+            "NameInSource": "roomNumber",
+            "Alias": "roomNumber",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "roomPrice",
+            "Index": -1,
+            "NameInSource": "roomPrice",
+            "Alias": "roomPrice",
+            "Type": "System.Nullable`1[System.Decimal]"
+          },
+          "3": {
+            "Name": "roomType",
+            "Index": -1,
+            "NameInSource": "roomType",
+            "Alias": "roomType",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "customerName",
+            "Index": -1,
+            "NameInSource": "customerName",
+            "Alias": "customerName",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "arriveTime",
+            "Index": -1,
+            "NameInSource": "arriveTime",
+            "Alias": "arriveTime",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "departureTime",
+            "Index": -1,
+            "NameInSource": "departureTime",
+            "Alias": "departureTime",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "checkinStatus",
+            "Index": -1,
+            "NameInSource": "checkinStatus",
+            "Alias": "checkinStatus",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "debitFee",
+            "Index": -1,
+            "NameInSource": "debitFee",
+            "Alias": "debitFee",
+            "Type": "System.Decimal"
+          },
+          "9": {
+            "Name": "roomFee",
+            "Index": -1,
+            "NameInSource": "roomFee",
+            "Alias": "roomFee",
+            "Type": "System.Decimal"
+          },
+          "10": {
+            "Name": "otherFee",
+            "Index": -1,
+            "NameInSource": "otherFee",
+            "Alias": "otherFee",
+            "Type": "System.Decimal"
+          },
+          "11": {
+            "Name": "totalFee",
+            "Index": -1,
+            "NameInSource": "totalFee",
+            "Alias": "totalFee",
+            "Type": "System.Decimal"
+          },
+          "12": {
+            "Name": "remark",
+            "Index": -1,
+            "NameInSource": "remark",
+            "Alias": "remark",
+            "Type": "System.String"
+          },
+          "13": {
+            "Name": "url",
+            "Index": -1,
+            "NameInSource": "url",
+            "Alias": "url",
+            "Type": "System.String"
+          },
+          "14": {
+            "Name": "estimateArriveTime",
+            "Index": -1,
+            "NameInSource": "estimateArriveTime",
+            "Alias": "estimateArriveTime",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "DataSource. dataList"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiPage",
+      "Name": "Page1",
+      "Guid": "21334015a82a37fddca32babbda8156b",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "Components": {
+        "0": {
+          "Ident": "StiPageHeaderBand",
+          "Name": "PageHeaderBand1",
+          "ClientRectangle": "0,0.4,34.8,0.7",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text30",
+              "Guid": "3e4f9a9f787b415c7cfc1c7f14ac9ea7",
+              "DockStyle": "Left",
+              "ClientRectangle": "0,0,8.2,0.7",
+              "ComponentStyle": "页眉左",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{orgName}"
+              },
+              "VertAlignment": "Bottom",
+              "Font": "Microsoft YaHei;;;",
+              "Border": "Bottom;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:51,51,51",
+              "Margins": {
+                "Left": 0,
+                "Right": 0,
+                "Top": 0,
+                "Bottom": 4
+              },
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text31",
+              "Guid": "a6f4a17c5c4f748bf6d46222b5aa8897",
+              "DockStyle": "Fill",
+              "ClientRectangle": "8.2,0,26.6,0.7",
+              "ComponentStyle": "页眉右",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "第{PageNumber}页，共{TotalPageCount}页"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Bottom",
+              "Font": "Microsoft YaHei;;;",
+              "Border": "Bottom;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 0,
+                "Right": 0,
+                "Top": 0,
+                "Bottom": 4
+              },
+              "Type": "Expression"
+            }
+          }
+        },
+        "1": {
+          "Ident": "StiPageFooterBand",
+          "Name": "PageFooterBand1",
+          "ClientRectangle": "0,73.14,34.8,0.7",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text44",
+              "Guid": "926264b882553cf934a0013a2b7ec454",
+              "DockStyle": "Left",
+              "ClientRectangle": "0,0,7.6,0.7",
+              "ComponentStyle": "页脚左",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{currentUser}"
+              },
+              "Font": "Microsoft YaHei;;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:188,188,188",
+              "Margins": {
+                "Left": 0,
+                "Right": 0,
+                "Top": 4,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text57",
+              "Guid": "effd8bdacc743e86d85b3692b902ca9d",
+              "DockStyle": "Fill",
+              "ClientRectangle": "7.6,0,27.2,0.7",
+              "ComponentStyle": "页脚右",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{currentTime}"
+              },
+              "HorAlignment": "Right",
+              "Font": "Microsoft YaHei;;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:188,188,188",
+              "Margins": {
+                "Left": 0,
+                "Right": 0,
+                "Top": 4,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            }
+          }
+        },
+        "2": {
+          "Ident": "StiReportTitleBand",
+          "Name": "ReportTitleBand1",
+          "ClientRectangle": "0,1.9,34.8,1.8",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text1",
+              "Guid": "a8e45cd7dac0120c995bdebccab509ab",
+              "DockStyle": "Top",
+              "ClientRectangle": "0,0,34.8,1.2",
+              "ComponentStyle": "报表名称",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ReportAlias}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;12;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "Type": "SystemVariables"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text46",
+              "Guid": "801ce268fd3188883e69eb65ce832df2",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Top",
+              "ClientRectangle": "0,1.2,34.8,0.6",
+              "ComponentStyle": "选择条件同步",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{selectedConditions}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:51,51,51",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "TextQuality": "Wysiwyg",
+              "AllowHtmlTags": true,
+              "Type": "Expression"
+            }
+          }
+        },
+        "3": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand1",
+          "ClientRectangle": "0,4.5,34.8,0.6",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text3",
+              "Guid": "ea544dd333f89de7aa469d9dd55b2a40",
+              "DockStyle": "Left",
+              "ClientRectangle": "0,0,1.4,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "序号"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_B_SUM",
+              "Guid": "64c59092237c0a98fe867b9b53a28a7f",
+              "DockStyle": "Left",
+              "ClientRectangle": "1.4,0,2.4,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.roomType"
+              },
+              "Text": {
+                "Value": "房型"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_C_SUM",
+              "Guid": "a90608a84098f2e71988a3e54ae6978d",
+              "DockStyle": "Left",
+              "ClientRectangle": "3.8,0,1.8,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.roomNumber"
+              },
+              "Text": {
+                "Value": "房号"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_D_SUM",
+              "Guid": "b54753b212debb5132a28c08c776d21a",
+              "DockStyle": "Left",
+              "ClientRectangle": "5.6,0,1.8,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.roomPrice"
+              },
+              "Text": {
+                "Value": "房价"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_E_SUM",
+              "Guid": "39f9b45d2cca65143cfe07f74561dec5",
+              "DockStyle": "Left",
+              "ClientRectangle": "7.4,0,2,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.customerName"
+              },
+              "Text": {
+                "Value": "客人姓名"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextQuality": "Wysiwyg",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_N_SUM",
+              "Guid": "8ecede83c055e1cbfc255c029fcfe887",
+              "DockStyle": "Left",
+              "ClientRectangle": "9.4,0,3.4,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.estimateArriveTime"
+              },
+              "Text": {
+                "Value": "团队预抵时间"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_F_SUM",
+              "Guid": "d0d2422787f63d0ccb54fe67656fe0ba",
+              "DockStyle": "Left",
+              "ClientRectangle": "12.8,0,3.4,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.arriveTime"
+              },
+              "Text": {
+                "Value": "入住时间"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "7": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_G_SUM",
+              "Guid": "8bf0bde901a8b59a093f5aa0bc3730db",
+              "DockStyle": "Left",
+              "ClientRectangle": "16.2,0,3.4,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.departureTime"
+              },
+              "Text": {
+                "Value": "离店时间"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "8": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_H",
+              "Guid": "120570ed1d24920f73bd5b00519d3d07",
+              "DockStyle": "Left",
+              "ClientRectangle": "19.6,0,2.4,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.totalFee"
+              },
+              "Text": {
+                "Value": "付款总计"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "9": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_I",
+              "Guid": "b67fdc3d5f5f7010f4ffd28d0d52795b",
+              "DockStyle": "Left",
+              "ClientRectangle": "22,0,2.4,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.roomFee"
+              },
+              "Text": {
+                "Value": "房费"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "10": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_J",
+              "Guid": "71a84abb91339f887f62f34a6a7318e7",
+              "DockStyle": "Left",
+              "ClientRectangle": "24.4,0,2.4,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.otherFee"
+              },
+              "Text": {
+                "Value": "其他消费"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "11": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_K",
+              "Guid": "598296395a8a2b3b8ee51a08e10f0efb",
+              "DockStyle": "Left",
+              "ClientRectangle": "26.8,0,2.4,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.debitFee"
+              },
+              "Text": {
+                "Value": "消费总计"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "12": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_L",
+              "Guid": "f083c3d9dbab843cf3d4136d9ca4556c",
+              "DockStyle": "Left",
+              "ClientRectangle": "29.2,0,1.6,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.checkinStatus"
+              },
+              "Text": {
+                "Value": "订单状态"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "13": {
+              "Ident": "StiText",
+              "Name": "HEADER_COL_M",
+              "Guid": "ffbde98cdce77a53c6ae2871f22d950f",
+              "DockStyle": "Left",
+              "ClientRectangle": "30.8,0,4,0.6",
+              "ComponentStyle": "表头栏",
+              "Interaction": {
+                "Ident": "StiInteraction",
+                "SortingColumn": "DataBand1.remark"
+              },
+              "Text": {
+                "Value": "备注"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            }
+          },
+          "PrintIfEmpty": true
+        },
+        "4": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand1",
+          "ClientRectangle": "0,5.9,34.8,0.6",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text2",
+              "Guid": "28e09c3371ce653438f273d88abf8310",
+              "DockStyle": "Fill",
+              "ClientRectangle": "0,0,34.8,0.6",
+              "ComponentStyle": "分组表头居左加粗",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{FrontPartOf(dataList.groupName,\"---\")}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:51,51,51",
+              "Margins": {
+                "Left": 5,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            }
+          },
+          "Condition": {
+            "Value": "{dataList.groupName}"
+          }
+        },
+        "5": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand1",
+          "ClientRectangle": "0,7.3,34.8,0.6",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text58",
+              "Guid": "062502129ec1d7ac57e60792ed4fb839",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "0,0,1.4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Line}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:51,51,51",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "SystemVariables"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_B_SUM",
+              "Guid": "a80e82a93285a8daef1eed4acc962e4d",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "1.4,0,2.4,0.6",
+              "ComponentStyle": "数据band",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{dataList.roomType}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:51,51,51",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "DataColumn"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_C_SUM",
+              "Guid": "354e64d880fd1c2453a7ce64608ed9dc",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "3.8,0,1.8,0.6",
+              "ComponentStyle": "数据band",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Hyperlink": {
+                "Value": "{hostName}{dataList.url}"
+              },
+              "Text": {
+                "Value": "{dataList.roomNumber}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:51,51,51",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "DataColumn"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_D_SUM",
+              "Guid": "50b0a9cad9e715428cd6b5d36788ce2a",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "5.6,0,1.8,0.6",
+              "ComponentStyle": "金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(dataList.roomPrice,2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_E_SUM",
+              "Guid": "7ac8a2ff8ed87e10c5c5128556055315",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "7.4,0,2,0.6",
+              "ComponentStyle": "数据band",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{dataList.customerName}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:51,51,51",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "DataColumn"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_N_SUM",
+              "Guid": "1085914e0476246b7a5708985a85d574",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "9.4,0,3.4,0.6",
+              "ComponentStyle": "时间",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{dataList.estimateArriveTime}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Arial Unicode MS;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "DataColumn"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_F_SUM",
+              "Guid": "d2863e7861208f0ff5a49c105e99bcec",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "12.8,0,3.4,0.6",
+              "ComponentStyle": "时间",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{dataList.arriveTime}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Arial Unicode MS;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "DataColumn"
+            },
+            "7": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_G_SUM",
+              "Guid": "6b38b510d587d606f86971bfdd690948",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "16.2,0,3.4,0.6",
+              "ComponentStyle": "时间",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{dataList.departureTime}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Arial Unicode MS;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "DataColumn"
+            },
+            "8": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_H",
+              "Guid": "03a7fc0e960db417788e8f02ccb99059",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "19.6,0,2.4,0.6",
+              "ComponentStyle": "金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(dataList.totalFee,2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "9": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_I",
+              "Guid": "186f074b7a1f188df3c4261ce610f272",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "22,0,2.4,0.6",
+              "ComponentStyle": "金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(dataList.roomFee,2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "10": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_J",
+              "Guid": "42326343f7f685de949e297a7b74b648",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "24.4,0,2.4,0.6",
+              "ComponentStyle": "金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(dataList.otherFee,2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "11": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_K",
+              "Guid": "401d1c832e2c9ff22c85a0a07399be75",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "26.8,0,2.4,0.6",
+              "ComponentStyle": "金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(dataList.debitFee,2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "12": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_L",
+              "Guid": "83c7e71313ab7139031b8a54d2be370c",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "29.2,0,1.6,0.6",
+              "ComponentStyle": "数据band",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{dataList.checkinStatus}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:51,51,51",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "DataColumn"
+            },
+            "13": {
+              "Ident": "StiText",
+              "Name": "DATA_COL_M",
+              "Guid": "18d9e8832a00963378e8c1446a0f60f2",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "30.8,0,4,0.6",
+              "ComponentStyle": "数据band",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{dataList.remark}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:51,51,51",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "DataColumn"
+            }
+          },
+          "DataSourceName": "dataList",
+          "Sort": {
+            "0": "DESC",
+            "1": "occurTime"
+          }
+        },
+        "6": {
+          "Ident": "StiGroupFooterBand",
+          "Name": "GroupFooterBand1",
+          "ClientRectangle": "0,8.7,34.8,0.6",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "GROUP_COL_SUM",
+              "Guid": "53757b1c10cda9156496d904e62dd4d4",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "0,0,19.6,0.6",
+              "ComponentStyle": "总计合计",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "小计"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "GROUP_COL_H",
+              "Guid": "64ecf505a60d9507d090e81f6e0db986",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "19.6,0,2.4,0.6",
+              "ComponentStyle": "统计金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(Sum(DataBand1,dataList.totalFee),2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "GROUP_COL_I",
+              "Guid": "571490505f8e3dd3de474fa1c6091caf",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "22,0,2.4,0.6",
+              "ComponentStyle": "统计金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(Sum(DataBand1,dataList.roomFee),2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "GROUP_COL_J",
+              "Guid": "5b6b0bf31f31673d77c6f8a64e9588d2",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "24.4,0,2.4,0.6",
+              "ComponentStyle": "统计金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(Sum(DataBand1,dataList.otherFee),2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "GROUP_COL_K",
+              "Guid": "ac0b88869f4edea7154b21bde48d8d19",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "26.8,0,2.4,0.6",
+              "ComponentStyle": "统计金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(Sum(DataBand1,dataList.debitFee),2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "GROUP_COL_L",
+              "Guid": "5cc77a6591cbee4f85b3ee9cf887924e",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "29.2,0,1.6,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Totals"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "GROUP_COL_M",
+              "Guid": "943ddee29dd435466296fafd157df450",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "30.8,0,4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Totals"
+            }
+          }
+        },
+        "7": {
+          "Ident": "StiFooterBand",
+          "Name": "FooterBand1",
+          "ClientRectangle": "0,10.1,34.8,0.6",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "FOOTER_COL_SUM",
+              "Guid": "42d5b03453091df58bcf7cf220f8041f",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "0,0,19.6,0.6",
+              "ComponentStyle": "总计合计",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "总计"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "FOOTER_COL_H",
+              "Guid": "ba30ff88dbc93e20a918c9c5b2c5e829",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "19.6,0,2.4,0.6",
+              "ComponentStyle": "统计金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(Sum(DataBand1,dataList.totalFee),2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "FOOTER_COL_I",
+              "Guid": "ee5e1de1d29bc18980c84917e3e558de",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "22,0,2.4,0.6",
+              "ComponentStyle": "统计金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(Sum(DataBand1,dataList.roomFee),2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "FOOTER_COL_J",
+              "Guid": "1d0d5c0de3b227abcbd6e0e0dc366e88",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "24.4,0,2.4,0.6",
+              "ComponentStyle": "统计金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(Sum(DataBand1,dataList.otherFee),2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "FOOTER_COL_K",
+              "Guid": "f89f04c1f197a1d8b1f90a9c26be1e54",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "26.8,0,2.4,0.6",
+              "ComponentStyle": "统计金额",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Round(Sum(DataBand1,dataList.debitFee),2)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "GroupSeparator": ",",
+                "UseLocalSetting": false
+              },
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "FOOTER_COL_L",
+              "Guid": "5adc4dea215315e525019c69ebf3cc77",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "29.2,0,1.6,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Totals"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "FOOTER_COL_M",
+              "Guid": "b16fd19298eaae0c76e174cc0fced8f7",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "DockStyle": "Left",
+              "ClientRectangle": "30.8,0,4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Microsoft YaHei;9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:55,55,55",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 6,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Totals"
+            }
+          },
+          "PrintIfEmpty": true
+        }
+      },
+      "PaperSize": "A4",
+      "LargeHeight": true,
+      "Orientation": "Landscape",
+      "PageWidth": 37.34,
+      "PageHeight": 21,
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Margins": {
+        "Left": 1.27,
+        "Right": 1.27,
+        "Top": 1.27,
+        "Bottom": 1.27
+      }
+    }
+  }
+}

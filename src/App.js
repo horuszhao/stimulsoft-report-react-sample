@@ -17,11 +17,17 @@ class App extends React.Component {
     let self = this;
     setTimeout(() => {
       self.changeLoad();
-    },1000);
+    },3000);
+
+    setTimeout(() => {
+      self.changeLoad([]);
+    },6000);
   }
 
-  changeLoad = () => {
-    this.setState({data:data});
+  changeLoad = (d) => {
+    let nd = d||data;
+    console.log(nd.length);
+    this.setState({data:nd});
   }
 
   render() {
